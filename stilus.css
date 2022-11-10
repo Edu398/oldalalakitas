@@ -6,11 +6,11 @@ main{
     display:grid;
     gap:10px;
     grid-template-columns: 2fr 5fr 1fr;
-    grid-template-areas: "h h h" "as a n" "f f f" ;
+    grid-template-areas: "h h h" "a n a" "f f f" ;
     
 
 }
-header,nav,article,footer,aside{
+header,nav,article,footer{
     border: 1px solid grey;
     padding:10px;
 }
@@ -24,10 +24,7 @@ nav {
 article{
     grid-area: a;
 }
-aside{
-    grid-area: as;
-    background-color: rgb(255, 227, 185);
-}
+
 footer{
     grid-area: f;
 }
@@ -35,7 +32,7 @@ footer{
     main{
      
         grid-template-areas: "h h h"
-        "n n n" "as a n" "f f f" ;
+        "n n n" "a a n" "f f f" ;
 }
 @media screen and (max-width:400px) {
     
